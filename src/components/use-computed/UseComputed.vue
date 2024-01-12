@@ -1,13 +1,9 @@
 <template>
-    <div>
-        <span>{{ params.from }}</span>
-    </div>
+    <div>aiden</div>
 </template>
 <script>
 export default {
-    props: {
-        params: { type: Object, default: () => {} },
-    },
+    props: [],
     components: {},
     watch: {},
     data() {

@@ -1,23 +1,20 @@
 <template>
     <div class="app-vue">
         <div>app.vue</div>
-        <div>
-            <span>UseProps</span>
-            <use-props />
-        </div>
+        <deep-props />
+        <deep-computed />
     </div>
 </template>
 <script>
-import UseProps from './components/UseProps.vue'
+import DeepProps from './components/DeepProps.vue'
+import DeepComputed from './components/DeepComputed.vue'
 export default {
     props: [],
     components: {
-        UseProps,
+        DeepProps,
+        DeepComputed,
     },
-    watch: {},
-    data() {
-        return {}
-    },
+
     computed: {},
     created() {},
     methods: {},
