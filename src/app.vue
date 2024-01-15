@@ -1,7 +1,7 @@
 <template>
     <div class="app-vue">
         <div>app.vue</div>
-        <deep-props />
+        <!-- <deep-props /> -->
         <deep-computed />
     </div>
 </template>
