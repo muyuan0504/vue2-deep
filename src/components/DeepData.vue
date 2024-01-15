@@ -1,15 +1,13 @@
 <template>
     <div>
-        <use-computed />
+        <use-data />
     </div>
 </template>
 <script>
-import UseComputed from './use-computed/index.vue'
+import UseData from './use-data/index.vue'
 export default {
     props: [],
-    components: {
-        UseComputed,
-    },
+    components: { UseData },
     watch: {},
     data() {
         return {}

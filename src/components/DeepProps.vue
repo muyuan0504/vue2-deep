@@ -17,8 +17,8 @@
 </div>
 </template>
 <script>
-import UseProps from './use-prop/UseProps.vue'
-console.error('---------- aiden --------------', UseProps)
+import UseProps from './use-prop/index.vue'
+// console.error('---------- aiden --------------', UseProps)
 export default {
 	props: [],
 	components: {
