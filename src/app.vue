@@ -1,10 +1,11 @@
 <template>
     <div class="app-vue">
         <div>app.vue</div>
-        <deep-life />
+        <!-- <deep-life /> -->
         <!-- <deep-data /> -->
         <!-- <deep-props /> -->
         <!-- <deep-computed /> -->
+        <deep-inject />
     </div>
 </template>
 <script>
@@ -12,6 +13,7 @@ import DeepLife from './components/DeepLife.vue'
 import DeepData from './components/DeepData.vue'
 import DeepProps from './components/DeepProps.vue'
 import DeepComputed from './components/DeepComputed.vue'
+import DeepInject from './components/DeepInject.vue'
 export default {
     props: [],
     components: {
@@ -19,6 +21,7 @@ export default {
         DeepData,
         DeepProps,
         DeepComputed,
+        DeepInject,
     },
 
     computed: {},

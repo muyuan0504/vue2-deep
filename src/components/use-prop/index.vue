@@ -1,8 +1,10 @@
 <template>
     <div>
+        <h2>子组件：use-prop</h2>
         <div>propObj.from: {{ propObj.from }}</div>
+        <div>propNumber: {{ propNumber }}</div>
+        <div>propArray: {{ propArray.join('') }}</div>
         <div>localPropObj.from: {{ localPropObj.from }}</div>
-        <!-- <div>propNumber: {{ propNumber }}</div> -->
         <div>localNum: {{ localNum }}</div>
         <div>localArray: {{ localArray.join('') }}</div>
         <div v-if="propBoolean">展示propBoolean</div>
@@ -58,7 +60,8 @@ export default {
             this.localPropObj.from = 'app' + (Math.random() * 10).toFixed(2)
         },
         changeLocalArray() {
-            this.localArray[0] = 2
+            this.localArray.push(2)
+            // this.$set(this.localArray, 0, 2)
             console.log(this.localArray)
             // this.localArray.push(2)
             // this.localArray.push((Math.random() * 10).toFixed(2))
