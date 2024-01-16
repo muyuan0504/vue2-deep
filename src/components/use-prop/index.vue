@@ -39,8 +39,14 @@ export default {
         }
     },
     computed: {},
+    beforeCreate() {
+        /** 父组件在子组件实例初始化前，this.$options.propsData*/
+        console.error('子组件 beforeCreate this.$options: ', JSON.stringify(this.$options.propsData))
+    },
     created() {
         console.warn('---------- created --------------')
+        /** 这里的this.$options.propsData是已经与父组件的data构建之后的propsData*/
+        console.error('子组件 this.$options: ', this.$options.propsData)
         console.error('---------- this.$attrs --------------', this.$attrs)
         console.error('this.$options.propsData: ', this.$options.propsData)
         console.log('this.propObj: ', this.propObj)

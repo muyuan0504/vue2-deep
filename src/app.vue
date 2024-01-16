@@ -3,17 +3,23 @@
         <div>app.vue</div>
         <!-- <deep-life /> -->
         <!-- <deep-data /> -->
-        <!-- <deep-props /> -->
+        <deep-props />
         <!-- <deep-computed /> -->
-        <deep-inject />
+        <!-- <deep-inject /> -->
+        <use-slot>
+            <deep-alive />
+            <div>use-slot</div>
+        </use-slot>
     </div>
 </template>
 <script>
-import DeepLife from './components/DeepLife.vue'
-import DeepData from './components/DeepData.vue'
-import DeepProps from './components/DeepProps.vue'
-import DeepComputed from './components/DeepComputed.vue'
-import DeepInject from './components/DeepInject.vue'
+import DeepLife from './components/DeepLife'
+import DeepData from './components/DeepData'
+import DeepProps from './components/DeepProps'
+import DeepComputed from './components/DeepComputed'
+import DeepInject from './components/DeepInject'
+import DeepAlive from './components/keep-alive/index'
+import UseSlot from './components/use-slot/index'
 export default {
     props: [],
     components: {
@@ -22,6 +28,8 @@ export default {
         DeepProps,
         DeepComputed,
         DeepInject,
+        DeepAlive,
+        UseSlot,
     },
 
     computed: {},

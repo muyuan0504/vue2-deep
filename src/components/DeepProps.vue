@@ -33,7 +33,9 @@ export default {
         }
     },
 	computed: {},
-	created() {},
+	created() {
+		console.error('父组件 this.$options: ', this.$options.propsData)
+	},
 	methods: {
 		changePropsData() {
             this.propObj.from = 'app' + (Math.random() * 10).toFixed(2)

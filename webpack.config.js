@@ -32,6 +32,7 @@ module.exports = {
         ],
     },
     resolve: {
+        extensions: ['.js', '.vue', '.json', '.jsx'], // 配置解析支持的文件扩展名，这样就不用在文件路径引入的时候,需要加 .vue 后缀了
         alias: {
             '@': path.resolve(__dirname, './src'),
         },
