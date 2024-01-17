@@ -5,7 +5,11 @@ export default {
     data() {
         return {
             mixinData: { count: 0 },
+            isMixin: true,
         }
+    },
+    created() {
+        console.error('created callback by mixin')
     },
     methods: {
         clickEvt() {

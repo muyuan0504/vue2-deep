@@ -11,6 +11,7 @@
             <div>use-slot</div>
         </use-slot> -->
         <use-mixin />
+        <use-vuex />
     </div>
 </template>
 <script>
@@ -22,6 +23,7 @@ import DeepInject from './components/DeepInject'
 import DeepAlive from './components/keep-alive/index'
 import UseSlot from './components/use-slot/index'
 import UseMixin from './components/use-mixin/index'
+import UseVuex from './components/use-vuex/index'
 export default {
     props: [],
     components: {
@@ -33,6 +35,7 @@ export default {
         DeepAlive,
         UseSlot,
         UseMixin,
+        UseVuex,
     },
 
     computed: {},
