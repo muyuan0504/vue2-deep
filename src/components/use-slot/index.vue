@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2>use-slot</h2>
+        <slot />
     </div>
 </template>
 <script>

@@ -3,13 +3,14 @@
         <div>app.vue</div>
         <!-- <deep-life /> -->
         <!-- <deep-data /> -->
-        <deep-props />
+        <!-- <deep-props /> -->
         <!-- <deep-computed /> -->
         <!-- <deep-inject /> -->
-        <use-slot>
+        <!-- <use-slot>
             <deep-alive />
             <div>use-slot</div>
-        </use-slot>
+        </use-slot> -->
+        <use-mixin />
     </div>
 </template>
 <script>
@@ -20,6 +21,7 @@ import DeepComputed from './components/DeepComputed'
 import DeepInject from './components/DeepInject'
 import DeepAlive from './components/keep-alive/index'
 import UseSlot from './components/use-slot/index'
+import UseMixin from './components/use-mixin/index'
 export default {
     props: [],
     components: {
@@ -30,6 +32,7 @@ export default {
         DeepInject,
         DeepAlive,
         UseSlot,
+        UseMixin,
     },
 
     computed: {},

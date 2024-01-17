@@ -46,6 +46,7 @@ module.exports = {
     ],
     devServer: {
         static: './dist',
+        hot: true,
     },
     mode: process.env.NODE_ENV,
 }
