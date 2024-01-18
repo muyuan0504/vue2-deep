@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const a = { b: 1 }
+
+            let val = 5
+
+            Object.defineProperty(a, 'b', {
+                get() {
+                    console.error('---------- aiden --------------get', val)
+                    return val
+                },
+                set(v) {
+                    val += v
+                    console.error('---------- aiden --------------set', val)
+                },
+            })
+
+            console.log(a.b)
+            a.b = 6
+            console.log(a.b)
+            let propsData = {}
+            propsData.b = a.b
+
+            /** propsData 如果不是响应式，那么已经丢失了对 a 对象的依赖收集 */
+
+            console.log(propsData.b)
+        </script>
+    </body>
+</html>
