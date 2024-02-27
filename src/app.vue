@@ -6,12 +6,16 @@
         <!-- <deep-props /> -->
         <!-- <deep-computed /> -->
         <!-- <deep-inject /> -->
-        <!-- <use-slot>
-            <deep-alive />
-            <div>use-slot</div>
-        </use-slot> -->
-        <use-mixin />
-        <use-vuex />
+        <!-- <deep-alive /> -->
+        <use-slot>
+            <!-- 作用域插槽：使用 <template> 标签定义作用域插槽，并通过 slot-scope 属性指定作用域变量的名称 -->
+            <template slot-scope="scopeProps">
+                <span>use-slot from app.vue {{ scopeProps.usecount }}</span>
+            </template>
+            <!-- <div>use-slot from app.vue</div> -->
+        </use-slot>
+        <!-- <use-mixin />
+        <use-vuex /> -->
     </div>
 </template>
 <script>
