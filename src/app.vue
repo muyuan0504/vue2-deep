@@ -7,15 +7,16 @@
         <!-- <deep-computed /> -->
         <!-- <deep-inject /> -->
         <!-- <deep-alive /> -->
-        <use-slot>
-            <!-- 作用域插槽：使用 <template> 标签定义作用域插槽，并通过 slot-scope 属性指定作用域变量的名称 -->
+        <!-- 作用域插槽：使用 <template> 标签定义作用域插槽，并通过 slot-scope 属性指定作用域变量的名称 -->
+        <!-- <use-slot>
             <template slot-scope="scopeProps">
                 <span>use-slot from app.vue {{ scopeProps.usecount }}</span>
             </template>
-            <!-- <div>use-slot from app.vue</div> -->
-        </use-slot>
+            <div>use-slot from app.vue</div>
+        </use-slot> -->
         <!-- <use-mixin />
         <use-vuex /> -->
+        <vitrual-list />
     </div>
 </template>
 <script>
@@ -28,6 +29,7 @@ import DeepAlive from './components/keep-alive/index'
 import UseSlot from './components/use-slot/index'
 import UseMixin from './components/use-mixin/index'
 import UseVuex from './components/use-vuex/index'
+import VitrualList from './components/virtual-list/index'
 export default {
     props: [],
     components: {
@@ -40,6 +42,7 @@ export default {
         UseSlot,
         UseMixin,
         UseVuex,
+        VitrualList,
     },
 
     computed: {},

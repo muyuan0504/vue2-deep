@@ -246,6 +246,7 @@ export function renderSlot(name: string, fallback: ?Array<VNode>, props: ?Object
 
     const target = props && props.slot
     if (target) {
+      /** props.slot 是在渲染组件时用于指定插槽的名称。这个属性通常用于函数式组件，以便在渲染时动态地选择要渲染到的插槽 */
         return this.$createElement('template', { slot: target }, nodes)
     } else {
         return nodes
